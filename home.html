@@ -1,29 +1,94 @@
-<!DOCTYPE html>
 <html>
-
 <head>
-<meta charset="utf-8">
-<title>Personal Web Site</title>
-</head>
+		<style>
+		a {
+		color: white;
+	}
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: solid gray;
+}
+
+	div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+	</style>
+</head>
 <body>
 
-<h1>Reginald Mole</h1>
-
-<hr />
-
-<nav> <!-- the nav tag (new in HTML5) is for a set of navigation links -->
+	<body>
+	<header>
 <ul>
-  <li><a href="home.html" >Home</a></li>
-  <li><a href="education.html">Education</a></li>
-  <li><a href="interests.html">Interests</a></li>
+	<li><a class="active" href="home.html">Home</a></li>
+  	<li><a href="bio.html">Bio</a></li>
+  	<li><a class="active" href="invention.html">Inventions</a></li>
+  	<li><a href="meaning.html">Modern significance</a></li>
 </ul>
-</nav>
-
-<img src="mole.jpg" alt="Reginald Mole Himself" />
-
-<p>Welcome to my humble home page. I do hope you find something that takes your interest</p>
-
+</header>
+<div class="flex-container">
+	<header> <h1>Exercise one CM1102 - Web Development</h1> </header>
+	<article class="article">
+		<p> This is a lousy site made in HTML without a separate CSS sheet, because I was being lazy and I wrote down all of the things in each page. I'm sorry for my incompetence. The site is supposed to present information about a notable figure in Computing. I chose Konrad Zuse.
+	</article>
+	<article class="article">
+	</article>
+<footer>Information source: <a href="https://en.wikipedia.org/wiki/Konrad_Zuse">Wikipedia.com</a> </footer>
+</div>
 </body>
-
 </html>

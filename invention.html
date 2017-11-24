@@ -1,17 +1,27 @@
 <html>
 <head>
+
 	<style>
-ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
+	a {
+		color: white;
+	}
+	img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 40%;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: #333;
 }
 
 li {
@@ -32,11 +42,6 @@ li a:hover {
 }
 .active {
     background-color: solid gray;
-}
-
-	div.container {
-    width: 100%;
-    border: 1px solid gray;
 }
 
 header, footer {
@@ -73,15 +78,16 @@ article {
 	<title> Zuse's Inventions </title>
 	</head>
 	<body>
-
+<div class="flex-container">
+	<header>
 <ul>
 	<li><a href="home.html">Home</a></li>
   	<li><a href="bio.html">Bio</a></li>
   	<li><a class="active" href="invention.html">Inventions</a></li>
   	<li><a href="meaning.html">Modern significance</a></li>
 </ul>
-<div class="flex-container">
-	<header> <h1>Zuse's Inventions</h1> </header>
+<h1>Zuse's Inventions</h1>	 
+	 </header>
 	<article class="article">
 			<h2>S1 and S2</h2>
 		<p>
@@ -90,6 +96,7 @@ article {
 		<p>
 			These machines contributed to the Henschel Werke Hs 293 and Hs 294 guided missiles developed by the German military between 1941 and 1945, which were the precursors to the modern cruise missile. The circuit design of the S1 was the predecessor of Zuse's Z11. Zuse believed that these machines had been captured by occupying Soviet troops in 1945.
 		</p>
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/2007-01-20_Gedenktafel_Zuse_Z3.jpg/1280px-2007-01-20_Gedenktafel_Zuse_Z3.jpg" alt="Plaque commemorating Zuse's work, attached to the ruin of Methfesselstraße 7, Berlin">
 	</article>
 	<article class="article">
 			<h2>The Z2, Z3, and Z4</h2>
@@ -105,8 +112,9 @@ article {
 		<p>
 			The Z3, the first fully operational electromechanical computer, was partially financed by German government-supported DVL, which wanted their extensive calculations automated. A request by his co-worker Helmut Schreyer—who had helped Zuse build the Z3 prototype in 1938—for government funding for an electronic successor to the Z3 was denied as "strategically unimportant".
 		</p>
+				<img src="https://upload.wikimedia.org/wikipedia/commons/6/65/Zuse_Z31.jpg" alt="Magnetic drum storage inside a Z31 (which was first displayed in 1963).">
 	</article>
-<footer>Copyright &copy; W3Schools.com</footer>
+<footer>Information source: <a href="https://en.wikipedia.org/wiki/Konrad_Zuse">Wikipedia.com</a> </footer>
 </div>
 	</body>
 </html>

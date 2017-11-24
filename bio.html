@@ -1,6 +1,9 @@
 <html>
 <head>
 		<style>
+		a {
+		color: white;
+	}
 
 img {
     border: 1px solid #ddd;
@@ -15,16 +18,11 @@ img {
 }
 
 ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color: #333;
 }
 
 li {
@@ -85,13 +83,16 @@ article {
 	</style>
 	<title>Biography</title>
 <body>
-	  <ul>
-  	<li><a href="bio.html">Bio</a></li>
-  	<li><a href="invention.html">Famous for</a></li>
-  	<li><a href="meaning.html">Modern significance</a></li>
-  </ul>
   <div class="flex-container">
-	<header> <h1>Konrad Zuse's Biography</h1> </header>
+	<header> 
+		<ul>
+	 	<li><a href="home.html">Home</a></li>
+  		<li><a class="active" href="bio.html">Bio</a></li>
+  		<li><a href="invention.html">Inventions</a></li>
+  		<li><a href="meaning.html">Modern significance</a></li>
+  	</ul>
+  	<h1>Konrad Zuse's Biography</h1> 
+	</header>
 	<article class="article">
 	<h2>Basic information</h2>
 		<p>
@@ -117,6 +118,6 @@ article {
 			Zuse was an atheist.
 		</p>
 	</article>
-	<footer>Copyright &copy; W3Schools.com</footer>
+<footer>Information source: <a href="https://en.wikipedia.org/wiki/Konrad_Zuse">Wikipedia.com</a> </footer>
 </div>
 	</body>
