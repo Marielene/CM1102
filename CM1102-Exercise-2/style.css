@@ -1,0 +1,20 @@
+header, footer {
+	padding:1em;
+	background-color: olive;
+	color:white;
+	text-align: center;
+	box-shadow: 8px;
+} 
+text{
+	font-family: sans-serif;
+}
+form{
+	align-self: center;
+	text-align-last: center;
+}
+p{
+	align-self: center;
+	text-align: center;
+	font-family: sans-serif;
+	font-size:16;
+}

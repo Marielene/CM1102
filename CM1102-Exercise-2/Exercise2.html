@@ -1,0 +1,29 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<link rel="stylesheet" href="style.css">
+		<title>Easter algorithm</title>
+		<header>
+			<h1>Finding Easter</h1>
+		</header>
+		<form method='post'
+		action="cgi-bin/easter.py">
+			Please input the year for which you'd like to calculate the Easter date:
+			<br>
+			<input type="text" name='year' id='year'>
+			<br>
+			<input type="radio" name="typ" value="weekday"> weekday day, month name, year 
+			<br>
+  			<input type="radio" name="typ" value="simple" checked="checked"> day/month/year
+  			<br>
+  			<input type="radio" name="typ" value="proper"> day, month name, year
+  			<br>
+			<input type="submit" value="Calculate">
+		</form>
+		<footer>
+			Easter Algorithm provided by CM1103 Problem Solving with Python, Stuart Allen.
+		</footer>
+	</body>
+</html>
