@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Coursework JS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <style>
+     span {
+      color:black;
+      display: none;
+    }
+  </style>
+  </head>
+  <body>
+    <div allign="middle">
+    <Header>
+      <h1> JavaScript payment validation form </h1>
+    </Header>
+    <form id="myForm" onsubmit="checkInput(event); return false;" allign="middle">
+      <br>
+      <input placeholder="Credit Card Number" id="creditCard" >
+      <p><span id="msg0">Input 16-digit card number no spaces or dashes.</span></p>
+      Expiry Date: <input placeholder="MM" id="month" size="1"> <input placeholder="YYYY" id="year" size="3">
+      <p><span id="msg1">Input month and year in numeric.</span></p>
+      <input placeholder="Cardholder names" id="names">
+      <p><span id="msg2">Input cardholder names.</span></p>
+      <input placeholder="CVC"  id="cvc" size="1">
+      <p><span id="msg3">Input a 3-digit CVC.</span></p>
+      <input type="submit" value="Submit">
+    </form>
+    <footer>
+      Input checking through JS script for payment validation, shows help messages on focus with jQuery(). 03/2018 
+    </footer>
+  </div>
+      <script type="text/JavaScript">
+      function checkInput(event){
+        event.preventDefault();
+        var numbers = /[^0-9]/gi;
+        var CC =document.getElementById("creditCard").value;
+        var EDm = document.getElementById("month").value;
+        var EDy = document.getElementById("year").value;
+        var Name =  document.getElementById("names").value;
+        var cvcc=document.getElementById("cvc").value;
+          if(CC.match(numbers) || CC.length > 16 || CC.length < 16){  
+            alert("Must input numbers, also make sure your input is 16 digits long!");
+            }
+          if(cvcc.match(numbers) || cvcc.length!=3){
+            alert("Must input numbers, ensure you have entered a valid CVC number");
+          }
+          
+          if(EDm.match(numbers) || EDm>12 || EDm<1){
+              alert("Ensure you have entered a valid numeric month!");
+          }
+          if(EDy.match(numbers) || EDy<=2017 || EDy.isNaN()){
+            alert("Must input numbers, ensure you have entered a valid year!");
+          }
+          if(Name==""){
+            alert("Input name.")
+          }
+      }
+    </script>
+  <script>
+    $("#creditCard").focus(function(){
+        $("#msg0").css("display", "inline").fadeOut(5000);
+    });
+     $("#month").focus(function(){
+         $("#msg1").css("display", "inline").fadeOut(5000);
+    });
+     $("#year").focus(function(){
+         $("#msg1").css("display", "inline").fadeOut(5000);
+    });
+          $("#names").focus(function(){
+         $("#msg2").css("display", "inline").fadeOut(5000);
+    });
+       $("#cvc").focus(function(){
+         $("#msg3").css("display", "inline").fadeOut(5000);
+    });
+</script>
+  </body>
+</html>
